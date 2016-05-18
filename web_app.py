@@ -4,11 +4,16 @@ import urlparse
 from sqlalchemy_orm import Path
 
 
+# Todo: implement foreign key on delete/on update behavior
+# Todo: make update actually do something interesting
+# Todo: make create only perform an update if the record exists
+
+
 class MaterializedPath(object):
     _root_path_exists = False
 
     def __init__(self):
-        pass
+        self._confirm_root_exists()
 
     @cherrypy.expose
     @cherrypy.tools.json_in()
@@ -29,7 +34,6 @@ class MaterializedPath(object):
         return self._root_path_exists
 
     def _get_path(self):
-        self._confirm_root_exists()
         parsed_url = urlparse.urlparse(cherrypy.url())
         path = parsed_url.path
         while path[-1] == '/':
