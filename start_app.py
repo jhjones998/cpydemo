@@ -1,5 +1,6 @@
 from web_app import MaterializedPath
 from plugins_and_tools import SAEnginePlugin, SATool
+from sys import argv
 import cherrypy
 
 
@@ -19,4 +20,4 @@ def main(mount_path):
     cherrypy.engine.start()
     cherrypy.engine.block()
 
-main('/cpydemo')
+main(argv[1])
