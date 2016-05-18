@@ -13,7 +13,7 @@ To start the project, simply do the following:
 3. Open a web browser or ReST client (I like Postman) and navigate to
 http://localhost:8080/cpydemo
 
-You can them perform GET, POST, PUT, PATCH, and DELETE HTTP methods at a given
+You can then perform GET, POST, PUT, PATCH, and DELETE HTTP methods at a given
 endpoint to read (GET), update (POST, PATCH), create (POST, PUT), and
 delete (DELETE) endpoints.
 
