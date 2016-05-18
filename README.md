@@ -17,6 +17,6 @@ You can them perform GET, POST, PUT, PATCH, and DELETE HTTP methods at a given
 endpoint to read (GET), update (POST, PATCH), create (POST, PUT), and
 delete (DELETE) endpoints.
 
-## Thanks/Code source
+## Code source
 The SQLAlchemy plugin and tool code was cribbed from
 http://www.defuze.org/archives/222-integrating-sqlalchemy-into-a-cherrypy-application.html
